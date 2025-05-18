@@ -37,6 +37,10 @@ h1{
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.flashcard div p {
+    font-size: 1.2rem;
+}
+
 div.selected {
     border: 1px solid #e03131;
     background-color: #e03131;
