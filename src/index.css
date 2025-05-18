@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e03131;
+    text-transform: uppercase;
+}
+
+.flashcard {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.flashcard div {
+    border : 1px solid #e7e7e7;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    aspect-ratio: 2 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+div.selected {
+    border: 1px solid #e03131;
+    background-color: #e03131;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+@media (min-width: 600px) {
+    .flashcard {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Large screens: 3 per row */
+@media (min-width: 992px) {
+    .flashcard {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
